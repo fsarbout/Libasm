@@ -14,7 +14,7 @@ _ft_strdup:
     je _err
     mov rdi, rax
     pop rsi
-    call _ft_strcpy ;copy rdi in the reserved memory for rsi 
+    call _ft_strcpy ;copy rdi in the reserved memory for rsi
     ret
 _err:
     mov rax, 0 ; add '\0'
