@@ -2,8 +2,8 @@ section .text
     global _ft_strcmp
 _ft_strcmp:
     mov rax, 0
-    mov al, [rdi]
-    mov bl, [rsi]
+    mov al, byte [rdi]
+    mov bl, byte [rsi]
     cmp al, 0
     je _exit
     cmp bl, 0
@@ -14,5 +14,5 @@ _ft_strcmp:
     je _ft_strcmp
     jne _exit
 _exit:
-    sub rax, rbx 
+    sub rax, rbx
     ret

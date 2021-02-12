@@ -3,7 +3,6 @@ section .text
 _ft_strcpy:
     mov rax, rdi
     mov rcx, 0
-    call _copy
 _copy:
     cmp byte [rsi + rcx], 0
     je _exit
